@@ -1,0 +1,52 @@
+#include<stdio.h>
+int main(){
+    char nomecorretor1[20],nomecorretor2[20],nomecorretor3[20];
+	float vendacorretor1=0,vendacorretor2=0,vendacorretor3=0,valortotaldaempresa=0;
+	printf("informe o nome do primeiro corretor:");
+	scanf("%s", nomecorretor1);
+	printf("\ninforme o valor da vendas do primeiro corretor:");
+    scanf("%f",&vendacorretor1);
+    
+	printf("\ninforme o nome do segundo corretor:");
+	scanf("%s", nomecorretor2);
+	printf("\ninforme o valor da vendas do segundo corretor:");
+    scanf("%f", &vendacorretor2);
+    
+    printf("\ninforme o nome do terceiro corretor:");
+	scanf("%s", nomecorretor3);
+	printf("\ninforme o valor da vendas do terceiro corretor:");
+    scanf("%f",&vendacorretor3);
+    
+    if(vendacorretor1>=30000 && vendacorretor1<= 50000){
+		printf("\no nome do corretor e %s,\nO valor de vendas foi %.2f e a comissao recebida foi: %.2f\n",nomecorretor1,vendacorretor1,vendacorretor1*0.095);
+	}else if(vendacorretor1>50000){
+		printf("\no nome do corretor e %s,\no valor de vendas foi %.2f e a comissao recebida foi: %.2f\n",nomecorretor1,vendacorretor1,vendacorretor1*0.12);
+	}else{
+		printf("\no nome do corretor e %s,\no valor de vendas foi %.2f e a comissao recebida foi: %.2f\n", nomecorretor1,vendacorretor1,vendacorretor1*0.07);
+ }
+    if(vendacorretor2>=30000 && vendacorretor2<= 50000){
+		printf("\no nome do corretor e %s,\nO valor de vendas foi %.2f e a comissao recebida foi: %.2f\n",nomecorretor2,vendacorretor2,vendacorretor2*0.095);
+	}else if(vendacorretor2>50000){
+		printf("\no nome do corretor e %s,\no valor de vendas foi %.2f e a comissao recebida foi: %.2f\n",nomecorretor2,vendacorretor2,vendacorretor2*0.12);
+	}else{
+		printf("\no nome do corretor e %s,\no valor de vendas foi %.2f e a comissao recebida foi: %.2f\n", nomecorretor2,vendacorretor2,vendacorretor2*0.07);
+ }
+    if(vendacorretor3>=30000 && vendacorretor1<= 50000){
+		printf("\no nome do corretor e %s,\nO valor de vendas foi %.2f e a comissao recebida foi: %.2f\n",nomecorretor3,vendacorretor3,vendacorretor3*0.095);
+	}else if(vendacorretor1>50000){
+		printf("\no nome do corretor e %s,\no valor de vendas foi %.2f e a comissao recebida foi: %.2f\n",nomecorretor3,vendacorretor3,vendacorretor3*0.12);
+	}else{
+		printf("\no nome do corretor e %s,\no valor de vendas foi %.2f e a comissao recebida foi: %.2f\n", nomecorretor3,vendacorretor3,vendacorretor3*0.07);
+ }
+    valortotaldaempresa=vendacorretor1+vendacorretor2+vendacorretor3;
+    printf("\no total de vendas da empresa foi: %.2f\n",valortotaldaempresa);
+	return 0;
+}	
+
+
+
+",valortotaldaempresa);
+
+	return 0;
+
+}	
