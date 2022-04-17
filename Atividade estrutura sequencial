@@ -1,0 +1,35 @@
+Exercício 1
+
+#include<stdio.h>
+
+int main (){
+
+  int a,b;
+
+  printf ("informe o valor de a:");
+
+  scanf ("%d", &a);
+
+  printf ("informe o valor de b:");
+
+  scanf ("%d", &b);
+
+  if(a>b)
+
+     {
+
+      printf ("%d", a);
+
+     }
+
+  if(b>a)
+
+    {
+
+      printf ("%d", b);
+
+    }
+
+  return 0;
+
+}
