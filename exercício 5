@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+ int valorproduto=0,valorvenda=0;
+ printf("informe o valor do produto:");
+ scanf("%d",&valorproduto);
+ if(valorproduto>=1500){
+   valorvenda=valorproduto+(valorproduto*(42.0 / 100));
+   printf("o valor da venda e: %d",valorvenda);
+ }else{
+ if(valorproduto<1500);	
+   valorvenda=valorproduto+(valorproduto* (34.0 / 100)); 
+   printf("o valor da venda e: %d",valorvenda);  
+ }   
+ return 0;	
+}
