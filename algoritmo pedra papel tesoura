@@ -1,0 +1,61 @@
+#include<stdio.h>
+#include<time.h>
+#include<stdlib.h>
+
+int main(){
+	int escolhadojogador=0,escolhadocomputador=0;
+	printf("escolha entre papel,tesoura ou pedra:\n");
+	printf("digite 1 para papel,2 para tesoura e 3 para a pedra:");
+	scanf("%d",&escolhadojogador);
+	
+	switch(escolhadojogador){
+		
+		case 1:
+			printf("voce escolheu papel");	
+		break;
+		
+		case 2:
+			printf("voce escolheu tesoura");	
+		break;
+		
+		case 3:
+			printf("voce escolheu pedra");		
+		break;
+		
+		default:
+		printf("voce escolheu uma opcao invalida");	
+	}
+	srand(time(NULL));
+	
+    escolhadocomputador=("%d",rand()%3+1);
+    
+    switch(escolhadocomputador){
+		
+		case 1:
+			printf(" e o computador escolheu papel");	
+		break;
+		
+		case 2:
+			printf(" e o computador escolheu tesoura");	
+		break;
+		
+		case 3:
+			printf(" e o computador escolheu pedra");		
+		break;
+		
+		default:
+			printf(" e o computador escolheu uma opcao invalida");	
+	}
+	if(escolhadojogador==escolhadocomputador){
+		printf("deu empate");	
+	}
+	else if(escolhadojogador==1 && escolhadocomputador==2 || escolhadojogador==2 && escolhadocomputador==3){
+			printf("\na escolha do jogador foi %d,e a escolhadocomputador foi %d",escolhadojogador,escolhadocomputador);
+			printf("\nvoce perdeu");	
+	}
+	else{
+		printf("\na escolha do jogador foi %d,e a escolhadocomputador foi %d",escolhadojogador,escolhadocomputador);
+		printf("\nvoce ganhou");
+	}
+	return 0;
+}
