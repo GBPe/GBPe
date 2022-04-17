@@ -1,0 +1,27 @@
+#include <stdio.h>
+int 
+main()
+{
+ int a=0,b=0,c=0,soma=0;
+ printf ("informe o valor de a:");
+ scanf ("%d", &a);
+ printf ("informe o valor de b:");
+ scanf ("%d", &b);
+ printf ("informe o valor de c:");
+ scanf ("%d", &c);
+ soma=(a+b);
+ if(soma<c)
+ {
+ printf ("a soma dos valores de a e b e menor que: %d", c); 
+ }
+ else
+ if(soma>c)
+ {
+ printf ("a soma dos valores de a e b e maior que: %d", c); 
+ }
+ else
+ {
+ printf ("a soma dos valores de a e b e igual: %d", c); 
+ }
+ return 0; 
+}
